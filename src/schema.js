@@ -71,9 +71,9 @@ const typeDefs = gql`
   type Film {
     id: ID!
     "Name of film being used"
-    title: String!
+    name: String!
     "box speed iso of film"
-    iso: String!
+    iso: Int!
     "brand name of film"
     brand: String
   }
@@ -81,7 +81,7 @@ const typeDefs = gql`
   type Lens {
     id: ID!
     "Name of lens being used"
-    title: String!
+    name: String!
     "Max aperture of lens."
     aperture: String!
     "fixed lens? true if yes, false if a zoom"

@@ -12,7 +12,7 @@ const mocks = {
       return {
         name: "Zechariah Edens",
         photo:
-          "https://res.cloudinary.com/themancalledzac/image/upload/v1636067236/Portfolio/DSC_0009_oj1nn7.jpg",
+          "https://res.cloudinary.com/themancalledzac/image/upload/v1638220918/Portfolio/personal_portrait_color_oj6wxn.jpg",
       };
     },
     date: () => "2021-07-14",
