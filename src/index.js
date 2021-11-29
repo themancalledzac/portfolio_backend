@@ -2,6 +2,9 @@ const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./schema");
 
 const mocks = {
+  Query: () => ({
+    imagesForHomePage: () => [...new Array(6)],
+  }),
   Image: () => ({
     id: () => "image_01",
     title: () => "A bike heading into the sunset in the Badlands.",
@@ -21,7 +24,7 @@ const mocks = {
       return {
         title: "NIKKOR Z 70-200mm f/2.8 VR S",
         aperture: "f 2.8",
-        fixedLength: false,
+        fixedLens: false,
         focalLength: "70-200mm",
         brand: "Nikon",
       };
@@ -38,7 +41,7 @@ const mocks = {
   }),
 };
 
-const server = new ApolloServer({ typeDefs, mocks: true });
+const server = new ApolloServer({ typeDefs, mocks });
 
 server.listen().then(() => {
   console.log(`
