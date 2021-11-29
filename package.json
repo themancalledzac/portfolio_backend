@@ -1,0 +1,29 @@
+{
+  "name": "portfolio_backend",
+  "version": "1.0.0",
+  "description": "Backend of my portfolio application, dealing specifically with the photography side.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index",
+    "dev": "nodemon src/index"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^3.4.0",
+    "apollo-server": "^3.5.0",
+    "graphql": "^15.7.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themancalledzac/portfolio_backend.git"
+  },
+  "author": "Zechariah Edens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/themancalledzac/portfolio_backend/issues"
+  },
+  "homepage": "https://github.com/themancalledzac/portfolio_backend#readme"
+}
