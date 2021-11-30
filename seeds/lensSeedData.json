@@ -1,0 +1,18 @@
+[
+    {
+        "_id": "5e417363316cab53182888d7",
+        "name": "NIKKOR Z 70-200mm f/2.8 VR S",
+        "aperture": "f2.8",
+        "fixedLens": "false",
+        "focalLength": "70-200mm",
+        "brand": "Nikon"
+    },
+    {
+        "_id": "5e417363316cab53182888d6",
+        "name": "NIKKOR Z 24-70mm f/4 S",
+        "aperture": "f4",
+        "fixedLens": "false",
+        "focalLength": "24-70mm",
+        "brand": "Nikon"
+    }
+]
