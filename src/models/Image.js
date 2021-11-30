@@ -1,16 +1,14 @@
 const { Schema, model } = require("mongoose");
 
 const imageSchema = new Schema({
-  id: {
-    type: String,
-    required: true,
-  },
   title: {
     type: String,
     required: true,
-    default: "Zechariah Edens",
   },
-  author: authorSchema,
+  author: {
+    type: Schema.Types.ObjectId,
+    ref: "Author",
+  },
   date: {
     type: String,
   },
@@ -24,10 +22,16 @@ const imageSchema = new Schema({
     type: Number,
   },
   isoSpeed: {
-    type: String,
+    type: Number,
   },
-  lens: lensSchema,
-  film: filmSchema,
+  lens: {
+    type: Schema.Types.ObjectId,
+    ref: "Lens",
+  },
+  film: {
+    type: Schema.Types.ObjectId,
+    ref: "Film",
+  },
   horizontal: {
     type: Boolean,
   },
@@ -38,7 +42,12 @@ const imageSchema = new Schema({
     type: String,
     required: true,
   },
-  keywords: keywordSchema,
+  keywords: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Keyword",
+    },
+  ],
 });
 
 const Image = model("Image", imageSchema);

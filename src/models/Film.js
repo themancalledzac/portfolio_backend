@@ -1,10 +1,6 @@
 const { Schema, model } = require("mongoose");
 
 const filmSchema = new Schema({
-  id: {
-    type: String,
-    required: true,
-  },
   name: {
     type: String,
     required: true,
@@ -16,8 +12,8 @@ const filmSchema = new Schema({
     default: 800,
   },
   brand: {
-      type: String,
-      default: "Kodak",
+    type: String,
+    default: "Kodak",
   },
 });
 

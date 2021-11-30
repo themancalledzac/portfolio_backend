@@ -1,10 +1,6 @@
 const { Schema, model } = require("mongoose");
 
 const authorSchema = new Schema({
-  id: {
-    type: String,
-    required: true,
-  },
   name: {
     type: String,
     required: true,
