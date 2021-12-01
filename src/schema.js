@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server");
+const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
   #Schema definitions go here
@@ -37,7 +37,7 @@ const typeDefs = gql`
     "focal length of the image, not to be confused with the focual length of the lens, which could be the range of the lens, not what was used for the image."
     focalLength: Int
     "ISO of the image"
-    isoSpeed: String
+    isoSpeed: Int
     "Lens used to create image"
     lens: Lens!
     "if using film, we associate what film being used"
