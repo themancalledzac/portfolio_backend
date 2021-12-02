@@ -4,11 +4,14 @@ const typeDefs = gql`
   #Schema definitions go here
   type Query {
     "Get our homepage images"
-    imagesForHomePage: [Image!]!
+    # imagesForHomePage: [Image!]!
     # TODO: get images query for landscape page
     # TODO: get images query for portrait page
     # TODO: get images query for street page
     # TODO: get images query for event page
+    getImages: [Image]!
+    getImage(imageId: ID!): Image!
+    getAuthor(authorId: ID!): Author!
   }
 
   # type Mutation {
@@ -23,7 +26,7 @@ const typeDefs = gql`
   # }
 
   type Image {
-    id: ID!
+    _id: ID!
     "Title of image"
     title: String!
     "Who is our author? Initially only I will be the author, but perhaps someday we can have guest images, or inspiration albums"
@@ -53,7 +56,7 @@ const typeDefs = gql`
   }
 
   type Author {
-    id: ID!
+    _id: ID!
     "Author's first and last name"
     name: String!
     "Author's profile picture url"
@@ -63,13 +66,13 @@ const typeDefs = gql`
   }
 
   type Keyword {
-    id: ID!
+    _id: ID!
     "Title of keyword"
     title: String!
   }
 
   type Film {
-    id: ID!
+    _id: ID!
     "Name of film being used"
     name: String!
     "box speed iso of film"
@@ -79,7 +82,7 @@ const typeDefs = gql`
   }
 
   type Lens {
-    id: ID!
+    _id: ID!
     "Name of lens being used"
     name: String!
     "Max aperture of lens."
