@@ -1,5 +1,5 @@
 // https://odyssey.apollographql.com/lift-off-part2/implementing-query-resolvers
-const { Image, Author } = require("./models");
+const { Image, Author, Lens } = require("./models");
 
 const resolvers = {
   Query: {
@@ -13,21 +13,30 @@ const resolvers = {
     // },
     // ----------------------------------------------------------------------------------------
     getImages: async () => {
-      return Image.find().sort({ createdAt: -1 });
+      const image = await Image.find({});
+      return image;
+      // return Image.find().sort({ createdAt: -1 });
     },
-    getImage: async (parent, { imageId }) => {
+    getImage: async (_, { imageId }, { dataSources }) => {
       return Image.findOne({ _id: imageId });
     },
-    getAuthor: async (parent, { authorId }) => {
-      return Author.findOne({ _id: authorId });
+    getAuthor: async (_, { authorId }) => {
+      const author = await Author.findOne({ _id: authorId });
+      return author;
+      // return Author.findOne({ _id: authorId });
+    },
+    getLens: async (_, { lensId }) => {
+      const lens = await Lens.findOne({ _id: lensId });
+      return lens;
     },
     // ----------------------------------------------------------------------------------------
   },
   Image: {
     // image type in our schema
-    getAuthor: ({ authorId }) => {
-      return Author.findOne({ _id: authorId });
-    },
+    author: (image, _, { dataSources: { authors } }) =>
+      authors.getAuthor(image.author),
+    // return Author.findOne({ _id: authorId });
+    lens: (image, _, { dataSources: { lens } }) => lens.getLens(image.lens),
   },
 };
 
