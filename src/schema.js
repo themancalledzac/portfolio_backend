@@ -12,6 +12,8 @@ const typeDefs = gql`
     getImages: [Image]!
     getImage(imageId: ID!): Image!
     getAuthor(authorId: ID!): Author!
+    getLens(lensId: ID!): Lens!
+    # Image.getAuthor(authorId: ID!): Author!
   }
 
   # type Mutation {
