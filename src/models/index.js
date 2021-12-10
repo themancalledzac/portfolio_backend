@@ -13,4 +13,5 @@ module.exports = {
   Film: require("./Film"),
   Keyword: require("./Keyword"),
   Lens: require("./Lens"),
+  Repository: require("./Repository"),
 };

@@ -15,6 +15,8 @@ const authorSchema = new Schema({
     type: String,
     default: "https://www.instagram.com/themancalledzac/",
   },
+  // TODO: Add an Image type for a one to many relationship
+  // TODO: Add a Repository type for a many to many relationhip
 });
 
 const Author = model("Author", authorSchema);

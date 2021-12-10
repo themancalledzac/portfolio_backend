@@ -13,7 +13,7 @@ class Images extends MongoDataSource {
     return author;
   }
   async getImages() {
-    const images = await this.findOneById({});
+    const images = await this.findOne({});
     return images;
   }
 }

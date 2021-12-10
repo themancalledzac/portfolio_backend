@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Virtual Acystant",
+        "link": "https://virtual-acystant.herokuapp.com/",
+        "github": "https://github.com/themancalledzac/virtual-acystant",
+        "image": "",
+        "tech": [
+            "JavaScript", "NodeJS", "React", "Express", "MongoDb", "Material-UI", "Mongoose", "Python"
+        ]
+    },
+    {
+        "title": "Book Search",
+        "link": "https://google-book-search-edens.herokuapp.com/",
+        "github": "https://github.com/themancalledzac/book-search-react",
+        "image": "",
+        "tech": [
+            "JavaScript", "NodeJS", "React", "Express", "MongoDb", "Material-UI", "Mongoose"
+        ]
+    },
+    {
+        "title": "Employee Directory",
+        "link": "https://react-employee-directory-edens.herokuapp.com/",
+        "github": "https://github.com/themancalledzac/react-employee-directory",
+        "image": "",
+        "tech": [
+            "JavaScript", "NodeJS", "React", "Express", "Bootstrap", "Axios"
+        ]
+    },
+    {
+        "title": "Student Management",
+        "link": "https://student-management-edens.herokuapp.com/",
+        "github": "https://github.com/themancalledzac/Student-Management-System",
+        "image": "",
+        "tech": [
+            "JavaScript", "jQuery", "NodeJS", "mySQL", "Sequelize", "Bootstrap", "Handlebars"
+        ]
+    }
+]
