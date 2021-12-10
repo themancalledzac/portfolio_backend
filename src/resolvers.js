@@ -1,5 +1,5 @@
 // https://odyssey.apollographql.com/lift-off-part2/implementing-query-resolvers
-const { Image, Author, Lens } = require("./models");
+const { Image, Author, Lens, Repository } = require("./models");
 
 const resolvers = {
   Query: {
@@ -28,6 +28,14 @@ const resolvers = {
     getLens: async (_, { lensId }) => {
       const lens = await Lens.findOne({ _id: lensId });
       return lens;
+    },
+    getRepos: async () => {
+      const repos = await Repository.find({});
+      return repos;
+    },
+    getRepo: async (_, { repoId }) => {
+      const repo = await Repository.findOne({ _id: repoId });
+      return repo;
     },
     // ----------------------------------------------------------------------------------------
   },
