@@ -13,6 +13,8 @@ const typeDefs = gql`
     getImage(imageId: ID!): Image!
     getAuthor(authorId: ID!): Author!
     getLens(lensId: ID!): Lens!
+    getRepos: [Repository]!
+    getRepo:(repoId: ID!): Repository!
     # Image.getAuthor(authorId: ID!): Author!
   }
 
@@ -95,6 +97,20 @@ const typeDefs = gql`
     focalLength: String!
     "brand of lens"
     brand: String!
+  }
+
+  type Repository {
+    _id: ID!
+    "Title of Repository."
+    title: String!
+    "Link to live repository page."
+    link: String!
+    "Link to repository github page."
+    github: String!
+    "Link to image."
+    image: String
+    "an array of tech terms associated with this repository, like JavaScript or React."
+    tech: [String]
   }
 `;
 
