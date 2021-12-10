@@ -14,7 +14,7 @@ const typeDefs = gql`
     getAuthor(authorId: ID!): Author!
     getLens(lensId: ID!): Lens!
     getRepos: [Repository]!
-    getRepo:(repoId: ID!): Repository!
+    getRepo(repoId: ID!): Repository!
     # Image.getAuthor(authorId: ID!): Author!
   }
 
