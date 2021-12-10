@@ -12,6 +12,10 @@ class Images extends MongoDataSource {
     const author = await this.findOneById(authorId);
     return author;
   }
+  async getImages() {
+    const images = await this.findOneById({});
+    return images;
+  }
 }
 
 module.exports = Images;
