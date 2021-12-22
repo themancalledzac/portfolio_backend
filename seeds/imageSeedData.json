@@ -1,15 +1,96 @@
 [
     {
-        "title": "A bike heading into the sunset in the Badlands.",
+        MANUAL "title": "A bike heading into the sunset in the Badlands.",
+        AUTO ME FOR NOW"author": "5e417363316cab53182888d8",
+        yes "date": "2021-07-14",
+        yes "make": "NIKON CORPORATION",
+        yes "model": "NIKON Z 6",
+        yes "time": "2021:07:06 19:41:11",
+        yes "exposure": "1/160",
+        yes "aperture": "f2.8",
+        yes "focalLength": "70",
+        yes "isoSpeed": "720",
+        AUTO FOR NOW, maybe select between two"lens": "5e417363316cab53182888d7",
+        YES/No Switch to be selected "horizontal": "true",
+        MANUAL"googleMapsLink": "https://goo.gl/maps/bLo2i3qJKFfKon5C6",
+        "imageUrl": "https://res.cloudinary.com/themancalledzac/image/upload/v1639697618/Portfolio/2021/full_size/DSC_0028-Edit-website_large-2_zj6qpx.jpg",
+        "imageSquareUrl": "https://res.cloudinary.com/themancalledzac/image/upload/v1639697621/Portfolio/2021/small_square/DSC_0028-Edit_dpayjq.jpg"
+    },
+    {
+        "title": "A lone tree sits",
         "author": "5e417363316cab53182888d8",
+        "imageWidth": ""
         "date": "2021-07-14",
         "aperture": "f2.8",
         "exposure": "1/160",
         "focalLength": "70",
-        "isoSpeed": "720",
+        "isoSpeed": "100",
         "lens": "5e417363316cab53182888d7",
         "horizontal": "true",
         "googleMapsLink": "https://goo.gl/maps/bLo2i3qJKFfKon5C6",
-        "imageUrl": "https://res.cloudinary.com/themancalledzac/image/upload/v1636067236/Portfolio/DSC_0028-Edit_amvgtk.jpg"
+        "imageUrl": "https://res.cloudinary.com/themancalledzac/image/upload/v1636067238/Portfolio/DSC_0667_la0il4.jpg"
     }
 ]
+
+{
+    "_id": "",
+    "title": "A bike heading into the sunset in the Badlands.",
+    "make": "NIKON CORPORATION",
+    "model": "NIKON Z 6",
+    "dateTimeOriginal": "2021:07:06 19:41:11",
+    "author": "5e417363316cab53182888d8",
+    "exposureTime": "0.00625 [1/160]", // remove everything before space, remove brackets
+    "aperture": "f2.8",
+    "focalLength": "70",
+    "isoSpeed": "720",
+    "lens": "5e417363316cab53182888d7",
+    "horizontal": "true",
+    "googleMapsLink": "https://goo.gl/maps/bLo2i3qJKFfKon5C6",
+    "imageUrl": "https://res.cloudinary.com/themancalledzac/image/upload/v1639697618/Portfolio/2021/full_size/DSC_0028-Edit-website_large-2_zj6qpx.jpg",
+    "imageSquareUrl": "https://res.cloudinary.com/themancalledzac/image/upload/v1639697621/Portfolio/2021/small_square/DSC_0028-Edit_dpayjq.jpg"
+}
+
+Make : NIKON CORPORATION
+Model : NIKON Z 6
+XResolution : 92 [92/1]
+YResolution : 92 [92/1]
+ResolutionUnit : 2
+Software : Adobe Photoshop Lightroom Classic 11.0.1 (Macintosh)
+DateTime : 2021:12:16 15:02:19
+Artist : ZECHARIAH EDENS
+ExifIFDPointer : 256
+ExposureTime : 0.00625 [1/160]
+FNumber : 2.8 [28/10]
+ExposureProgram : Manual
+ISOSpeedRatings : 720
+undefined : 20012257
+ExifVersion : 0231
+DateTimeOriginal : 2021:07:06 19:41:11
+DateTimeDigitized : 2021:07:06 19:41:11
+ShutterSpeedValue : 7.321928
+ApertureValue : 2.970854 [2970854/1000000]
+ExposureBias : 0
+MeteringMode : Pattern
+LightSource : Unknown
+Flash : Flash did not fire
+FocalLength : 200 [2000/10]
+SubsecTimeOriginal : 02
+SubsecTimeDigitized : 02
+ColorSpace : 1
+FocalPlaneXResolution : 1683.0665283203125 [55150724/32768]
+FocalPlaneYResolution : 1683.0665283203125 [55150724/32768]
+FocalPlaneResolutionUnit : 3
+SensingMethod : One-chip color area sensor
+FileSource : DSC
+SceneType : Directly photographed
+CustomRendered : Custom process
+ExposureMode : 1
+WhiteBalance : Auto white balance
+FocalLengthIn35mmFilm : 200
+SceneCaptureType : Standard
+GainControl : None
+Contrast : Normal
+Saturation : Normal
+Sharpness : Normal
+SubjectDistanceRange : Unknown
+thumbnail : [undefined values]

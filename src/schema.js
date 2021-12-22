@@ -12,6 +12,7 @@ const typeDefs = gql`
     getImages: [Image]!
     getImage(imageId: ID!): Image!
     getAuthor(authorId: ID!): Author!
+    getLenses: [Lens]!
     getLens(lensId: ID!): Lens!
     getRepos: [Repository]!
     getRepo(repoId: ID!): Repository!
@@ -55,6 +56,8 @@ const typeDefs = gql`
     googleMapsLink: String
     "The image's url, hosted on cloudinary"
     imageUrl: String!
+    "The image's smaller, square ßurl, hosted on cloudinary"
+    imageSquareUrl: String!
     "The image's keywords for search functionality"
     keywords: [Keyword!]!
   }

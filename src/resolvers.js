@@ -29,6 +29,10 @@ const resolvers = {
       const lens = await Lens.findOne({ _id: lensId });
       return lens;
     },
+    getLenses: async () => {
+      const lens = await Lens.find({});
+      return lens;
+    },
     getRepos: async () => {
       const repos = await Repository.find({});
       return repos;

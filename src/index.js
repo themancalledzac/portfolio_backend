@@ -8,6 +8,7 @@ const { MongoClient } = require("mongodb");
 const Images = require("./datasources/Images");
 const Authors = require("./datasources/Authors");
 const Lens = require("./datasources/Lens");
+const Repository = require("./datasources/Repository");
 
 const PORT = process.env.PORT || 4000;
 const app = express();
@@ -30,6 +31,7 @@ serverStart().then((database) => {
       images: new Images(database.collection("images")),
       lens: new Lens(database.collection("lens")),
       authors: new Authors(database.collection("authors")),
+      repositories: new Repository(database.collection("repositories")),
     }),
   });
 

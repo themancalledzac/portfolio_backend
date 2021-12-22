@@ -42,6 +42,10 @@ const imageSchema = new Schema({
     type: String,
     required: true,
   },
+  imageSquareUrl: {
+    type: String,
+    required: true,
+  },
   keywords: [
     {
       type: Schema.Types.ObjectId,
